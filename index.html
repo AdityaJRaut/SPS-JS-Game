@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+    text-align: center;
+    padding: 50px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+
+  button {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  #rock {
+    background-color: #3498db;
+    color: white;
+  }
+
+  #paper {
+    background-color: #2ecc71;
+    color: white;
+  }
+
+  #scissor {
+    background-color: #f1c40f;
+    color: black;
+  }
+
+  #reset {
+    background-color: #e74c3c;
+    color: white;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  #move {
+    color: #34495e;
+  }
+
+  #result {
+    color: #16a085;
+  }
+</style>
+
+</head>
+<body>
+    <button id="rock" onclick="playerMove('Rock')">Rock</button>
+    <button id="paper" onclick="playerMove('Paper')">Paper</button>
+    <button id="scissor" onclick="playerMove('Scissor')">Scissor</button>
+    <p id="move"></p>
+    <p id="result"></p>
+    <button id="reset" onclick="reset()">Reset</button>
+    <script src="rps.js"></script>
+</body>
+</html>
