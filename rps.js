@@ -36,9 +36,9 @@ function playerMove(playMove) {
 
 function generateComputerMove() {
     let random = Math.random();
-    if (random < 0.33)
+    if (random < 1/3)
         return 'Rock'
-    else if (random < 0.66)
+    else if (random < 2/3)
         return 'Paper'
     else
         return 'Scissor'
